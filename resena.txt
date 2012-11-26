@@ -1,0 +1,33 @@
+{
+    "valoraciones": [
+        {
+            "nombre": "Actividad Paranormal",
+            "resena": "La pelicula no da mucho miedo, la verdad prefiero las anteriores"
+        },
+        {
+            "nombre": "Amigos",
+            "resena": "Esta pelicula me recuerda mucho una historia que vivi, me hizo llorar"
+        },
+        {
+            "nombre": "Asesino del futuro",
+            "resena": "Otra aburrida pelicula..."
+        },
+        {
+            "nombre": "Busqueda implacable 2",
+            "resena": "Estuvo genial, pero me quedé con la duda de que pasara despues..."
+        },
+        {
+            "nombre": "El arte de vivir",
+            "resena": "No me gusto para nada"
+        },
+        {
+            "nombre": "El codigo del miedo",
+            "resena": "No da miedo, da risa"
+        },
+        {
+            "nombre": "El Fantasma de Madeline O'Malley",
+            "resena": "Me dio mas miedo la de gasparin"
+    
+        }
+    ]
+}
