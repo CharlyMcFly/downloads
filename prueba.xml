@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="Your App Name">
-    <Require feature="rpc"/>
-    <Require feature="views"/>
-  </ModulePrefs>
-  <Content type="html">
-    <![CDATA[
+<ModulePrefs title="Your App Name">
+<Require feature="rpc"/>
+<Require feature="views"/>
+</ModulePrefs>
+<Content type="html"><![CDATA[
+    
 
       <!-- PRODUCCION
       <script src="//talkgadget.google.com/hangouts/_/api/hangout.js?v=1.2"></script>
@@ -19,19 +18,14 @@
 
       <!-- application code -->
 	<div class="principal">
-		<div class="JuegoAhorcado">			
+		<div class="JuegoAhorcado">
 			<div class="ContenedorJuego">
-				<div id="Pregunta"></div>
+				<div id="Pregunta" class="Pregunta"></div>
 				<div class="ColumnaUno">
 					<div id="ContenedorAbecedario" class="ContenedorAbecedario">
 						<ul class="Azul" id="letras"></ul>
 					</div>
-					<div class="Palabra" id="Palabra">
-						<span><input type='text' name='l0' id='l0'></span>
-						<span><input type='text' name='l1' id='l1'></span>
-						<span><input type='text' name='l2' id='l2'></span>
-						<span><input type='text' name='l3' id='l3'></span>
-					</div>
+					<div class="Palabra" id="Palabra"></div>
 				</div>
 				<div class="ColumnaDos">
 					<div id="monito" class="ContenedorAhorcado">
@@ -45,10 +39,8 @@
 				</div>
 			</div>
 			<div id="resultado" class="Resultado" style="display:none;"></div>	
-			<input type="hidden" id="contador" value="0">
-			<input type="hidden" id="palabra" value="0">
 		</div>
 	</div>
-    ]]>
-  </Content>
+    
+  ]]></Content>
 </Module>
