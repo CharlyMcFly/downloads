@@ -3,7 +3,7 @@
 <Require feature="rpc"/>
 <Require feature="views"/>
 </ModulePrefs>
-<Content type="html"><![CDATA[
+<Content type="html">
     
 
       <!-- PRODUCCION
@@ -11,7 +11,7 @@
       -->
       <!-- DESARROLLO -->
       <script src="//hangoutsapi.talkgadget.google.com/hangouts/_/api/hangout.js?v=1.2"></script>
-
+      
       <link rel="stylesheet" type="text/css" href="https://raw.github.com/CharlyMcFly/downloads/master/ahorcado2/css/estilos.css" />  
       <script type="text/javascript" src= "https://raw.github.com/CharlyMcFly/downloads/master/ahorcado2/js/jquery-1.7.1.min.js"></script>
       <script type="text/javascript" src="https://raw.github.com/CharlyMcFly/downloads/master/ahorcado2/js/funciones.js"></script>
@@ -42,5 +42,5 @@
 		</div>
 	</div>
     
-  ]]></Content>
+  </Content>
 </Module>
