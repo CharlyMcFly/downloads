@@ -1,0 +1,72 @@
+html,body {
+  font-family: sans-serif;
+  font-size: 10px; /*conform with jquery-ui em settings */
+  background-color: white;
+  background-image: url("../img/grid.gif");
+  background-size: 24px 24px;
+  /* need this for webkit as well. */
+  image-rendering: -moz-crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+#root {
+  display: block;
+}
+
+ul, li {
+  display: block;
+  float: left;
+}
+.menu { 
+  
+}
+#canvas { 
+  width: auto; 
+}
+
+#container {
+  position: relative; /* needed for footer positioning*/
+  height: auto !important;
+  min-height: 100%;
+}
+
+#canvas-container {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+#drawing-area {
+  position: absolute;
+  background-color: white;
+  background-image: url("../img/grid.gif");
+  background-size: 24px 24px;
+  /* need this for webkit as well. */
+  image-rendering: -moz-crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+li .content {
+  border: 2px solid gray;
+  height: 50px;
+  width: 100px;
+  display: block;
+  overflow: hidden;
+  margin: 5px auto;
+}
+
+input {
+  border : none;
+}
+
+input:focus{
+ background-color: lightyellow;
+}
+
+#encabezado{
+  font-family: sans-serif;
+  font-size: 20px; /*conform with jquery-ui em settings */
+  color: gray;
+  background-color: white;
+  text-align: center;
+}

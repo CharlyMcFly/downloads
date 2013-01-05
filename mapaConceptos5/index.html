@@ -1,0 +1,69 @@
+<!doctype html>
+<htm>
+	<head>
+		<title>Mapa Conceptual</title>
+		<script type="text/javascript" src="js/knockout-2.1.0.js"></script>
+		<link rel="stylesheet" href="css/estilos.css">
+	</head>
+	<body>
+		<div class="principal">
+			<!--<div id="canvas-container" style="height: 2000px;">
+	  			<div id="drawing-area" class="no-select" style="width: 1000px; height: 2000px;">-->
+	  				<script type="text/html" id="node">
+					<li>
+		  				<div class="content">
+							<div class="menu">
+								<a href="#" data-bind="click: addNode">+</a>
+								<a href="#" data-bind="click: deleteNode">-</a>
+							</div>
+							<!--<div data-bind="text: content"></div>-->
+							<input type="text" id="nodo" name="nodo" data-bind="text:content"/>
+						</div>
+					<ul data-bind="template: { name: 'node', foreach: children }">
+					</ul>
+					<!-- /ko -->
+					</li>
+					</script>
+	  			<!--</div>
+	  			<div id="encabezado">
+	  				Mapa Conceptual
+	  			</div>-->
+	  			<div id="canvas">
+					<ul id="root" data-bind="template: { name: 'node', data: root }">
+					</ul>
+				</div>
+	  	</div>
+  		<script type="text/javascript">
+			function Node(content, parent) {
+				var self = this;
+				self.content = ko.observable(content);
+				self.top = ko.computed(function() {
+
+					return parent ? parent.top() + 100 : 0;
+				}, self);  
+				self.left = ko.computed(function() {
+					return parent ? parent.left() + parent.children().length * 100 : 0;
+				}, self);
+				self.children = ko.observableArray();
+				self.addNode = function() {
+					self.children.push(new Node('New Node ' + new Date(), self) );
+					var nodo = document.getElementById('nodo');
+        			nodo.focus();
+				}
+
+				self.deleteNode = function() {
+					parent.children.remove(self);
+				}
+			}
+
+			var app = {
+				root: new Node('Idea Principal')
+			};
+
+			
+			ko.applyBindings(app);
+			var root = document.getElementById('root');
+        	root.focus();
+		</script>
+	</body>
+</html>
