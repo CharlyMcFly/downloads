@@ -101,6 +101,17 @@ PRODUCTION -->
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(ga, s);
     })();
+    
+    function myEventHandlers(){
+  //gapi.hangout.data.onStateChanged.add();
+}
+gapi.hangout.data.onStateChanged.add(function(stateChangeEvent) {
+         aa();
+        });
+
+    
+    
+    
   </script>
 PRODUCTION -->
 
