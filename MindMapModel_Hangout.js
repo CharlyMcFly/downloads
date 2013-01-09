@@ -35,9 +35,9 @@ function pintaMapa(json) {
   
 }
 
-//function cargaMapa (){
-this.cargaMapa = function(){
-	alert("Entre a cargar mapa");
+function cargaMapa (){
+//this.cargaMapa = function(){
+	alert("Entre a cargar mapa 0");
 	var json = '{"id":"1d4ba05e-6d15-4923-88a2-23dc91f9f09b","title":"New Document","mindmap":{"root":{"id":"dea33add-4352-4fec-adfa-f71b12f57020","parentId":null,"text":{"caption":"Idea Principal","font":{"style":"normal","weight":"bold","decoration":"none","size":20,"color":"#000000"}},"offset":{"x":0,"y":0},"foldChildren":false,"branchColor":"#000000","children":[{"id":"fc30c175-854a-4b8c-abbc-7b851b74a44b","parentId":"dea33add-4352-4fec-adfa-f71b12f57020","text":{"caption":"Concepto","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-133,"y":124},"foldChildren":false,"branchColor":"#cb13ef","children":[{"id":"def37363-5d4f-4fef-8289-df61fbbdcb47","parentId":"fc30c175-854a-4b8c-abbc-7b851b74a44b","text":{"caption":"Concepto","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-102,"y":-34},"foldChildren":false,"branchColor":"#cb13ef","children":[{"id":"6255a910-b2b4-40a8-9044-bb5b05e38373","parentId":"def37363-5d4f-4fef-8289-df61fbbdcb47","text":{"caption":"Concepto","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-101,"y":115},"foldChildren":false,"branchColor":"#cb13ef","children":[]}]}]}]}},"dates":{"created":1357753219805},"dimensions":{"x":4000,"y":2000},"autosave":false}';
   //function cargaMapa(json){
     doc = mindmaps.Document.fromJSON(json); //convertir la cadena JSON a objeto y mostrar el documento
