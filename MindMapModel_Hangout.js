@@ -33,11 +33,15 @@ function pintaMapa(json) {
   alert("JSON==101" + json);
   
   //cargaMapa(json);
+  //mindmaps.Document.fromJSON = function(json) {
+   
   doc = mindmaps.Document.fromJSON(json); //convertir la cadena JSON a objeto y mostrar el documento
-  alert("Nose por que no pinto el mapa1"+doc);
+  alert("Nose por que no pinto el mapa1");
   this.document = doc;
-  alert("Nose por que no pinto el mapa2"+doc);
-  eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, doc);
+  alert("Nose por que no pinto el mapa2");
+  //
+  
+  eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, mindmaps.Document.fromObject(doc));
   alert("Nose por que no pinto el mapa3");
   //this.cargaMapa2(json);
   
