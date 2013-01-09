@@ -104,11 +104,12 @@ function onStateChange() {
   <script>
 
 
-
+/*
 function pintaMapa(json) {  
   //return mindmaps.Document.fromJSON(json);    
   alert("JSON====" + json);
 }
+*/
 
 gapi.hangout.onApiReady.add(function(eventObj) 
 {     
