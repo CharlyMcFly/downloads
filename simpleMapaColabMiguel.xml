@@ -39,7 +39,7 @@ function onStateChange() {
   console.log("entró en onStateChange");
   var existe = gapi.hangout.data.getValue('mapaModel');
   if(existe){
-    console.log("existe: 72 " + existe);
+    console.log("existe: 7233 " + existe);
     pintaMapa(existe);
   }
 };
