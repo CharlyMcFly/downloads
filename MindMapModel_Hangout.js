@@ -31,10 +31,20 @@ function onStateChange() {
 function pintaMapa(json) {  
   //return mindmaps.Document.fromJSON(json);    
   alert("JSON==101" + json);
+  cargarMapa(json);
   
 }
 
-
+this.cargaMapa = function(json){
+  //function cargaMapa(json){
+    doc = mindmaps.Document.fromJSON(json); //convertir la cadena JSON a objeto y mostrar el documento
+    this.document = doc;
+    if (doc) {
+      eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, doc);
+    } else {
+      eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
+    }
+  };
 
 /*function onStateChange() {
 	console.log("entró en onStateChange");
