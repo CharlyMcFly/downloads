@@ -35,7 +35,12 @@ function pintaMapa(json) {
   //cargaMapa(json);
   this.cargaMapa2(json);
   
-}
+};
+
+this.getDocument = function() {
+	//alert("document");
+    return this.document;
+  };
 
 function cargaMapa (json){
 //this.cargaMapa = function(){
