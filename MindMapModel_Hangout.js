@@ -54,7 +54,7 @@ function cargaMapa (json){
     if (doc) {
     	alert("Entre a cargar mapa 1"+doc);
     	///eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
-      eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, doc);
+      eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, json);
     } else {
     	alert("Entre a cargar mapa 2");
       eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
