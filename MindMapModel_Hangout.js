@@ -41,8 +41,10 @@ function cargaMapa(json){
     doc = mindmaps.Document.fromJSON(json); //convertir la cadena JSON a objeto y mostrar el documento
     this.document = doc;
     if (doc) {
+    	alert("Entre a cargar mapa 1");
       eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, doc);
     } else {
+    	alert("Entre a cargar mapa 2");
       eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
     }
   };
