@@ -35,7 +35,7 @@ function pintaMapa(json) {
   
 }
 
-cargaMapa = function(json){
+function cargaMapa(json){
 	alert("Entre a cargar mapa");
   //function cargaMapa(json){
     doc = mindmaps.Document.fromJSON(json); //convertir la cadena JSON a objeto y mostrar el documento
