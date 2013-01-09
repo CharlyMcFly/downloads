@@ -17,7 +17,7 @@
 
 var kMAPA = "mapaModel";
 
-function onStateChange() {
+/*function onStateChange() {
 	console.log("entró en onStateChange");
 	var existe = gapi.hangout.data.getValue('mapaModel');
 	if(existe){
@@ -46,7 +46,7 @@ gapi.hangout.onApiReady.add(function(eventObj){
 	catch (e) {
 	console.log(e.stack);
 }
-});
+});*/
 
 
 
