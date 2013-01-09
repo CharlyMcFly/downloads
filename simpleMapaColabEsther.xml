@@ -70,8 +70,7 @@ function onStateChange() {
   <script src="https://raw.github.com/gelypam/HangoutTest/master/MapasMentales/js/Util.js"></script>
   <script src="https://raw.github.com/gelypam/HangoutTest/master/MapasMentales/js/Point.js"></script>
   <script src="https://raw.github.com/gelypam/HangoutTest/master/MapasMentales/js/Document.js"></script>
-  <!--<script src="https://raw.github.com/gelypam/HangoutTest/master/MapasMentales/js/MindMap_Hangout.js"></script>-->
-  <script src="https://raw.github.com/CharlyMcFly/downloads/master/MindMapModel_Hangout.js"></script>
+  <script src="https://raw.github.com/gelypam/HangoutTest/master/MapasMentales/js/MindMap_Hangout.js"></script>
   <script src="https://raw.github.com/gelypam/HangoutTest/master/MapasMentales/js/Node.js"></script>
   <script src="https://raw.github.com/gelypam/HangoutTest/master/MapasMentales/js/NodeMap.js"></script>
   <script src="https://raw.github.com/gelypam/HangoutTest/master/MapasMentales/js/UndoManager.js"></script>
