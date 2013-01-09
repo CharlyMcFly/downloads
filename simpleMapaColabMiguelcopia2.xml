@@ -99,7 +99,7 @@ function onStateChange() {
     <script>console.log("CanvasPresenter executed");</script>
   <script src="https://raw.github.com/gelypam/HangoutTest/master/MapasMentales/js/ApplicationController.js"></script>
   <script>console.log("aplicationController executed");</script>
-  <script src="https://raw.github.com/gelypam/HangoutTest/master/MapasMentales/js/MindMapModel_Hangout.js"></script>
+  <script src="https://raw.github.com/CharlyMcFly/downloads/master/MindMapModel_Hangout.js"></script>
   <script>console.log("MindMapModel_Hangout executed");</script>
   <script>
 
