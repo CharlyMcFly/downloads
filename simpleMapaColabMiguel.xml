@@ -122,7 +122,7 @@ gapi.hangout.onApiReady.add(function(eventObj)
       } 
     }
   catch (e) { 
-      console.log("m71: "+e.stack); 
+      console.log(e.stack); 
   } 
 });
 
