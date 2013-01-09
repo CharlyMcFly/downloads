@@ -33,7 +33,7 @@ PRODUCTION -->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 
-
+<!--
 <script>
 function onStateChange() {
   console.log("entró en onStateChange");
@@ -47,7 +47,7 @@ function onStateChange() {
   gapi.hangout.data.onStateChanged.add(onStateChange);
 
 
-</script>
+</script>-->
 
 
 
@@ -101,7 +101,7 @@ function onStateChange() {
   <script>console.log("aplicationController executed");</script>
   <script src="https://raw.github.com/gelypam/HangoutTest/master/MapasMentales/js/MindMapModel_Hangout.js"></script>
   <script>console.log("MindMapModel_Hangout executed");</script>
-  <script>
+  <!--<script>
 
 
 
@@ -129,7 +129,7 @@ gapi.hangout.onApiReady.add(function(eventObj)
 
 
 
-</script>
+</script>-->
 
   <script src="https://raw.github.com/gelypam/HangoutTest/master/MapasMentales/js/NewDocument.js"></script>
   <script src="https://raw.github.com/gelypam/HangoutTest/master/MapasMentales/js/OpenDocument.js"></script>
