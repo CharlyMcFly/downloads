@@ -105,7 +105,7 @@ function onStateChange() {
 
 
 function pintaMapa(json) {  
-console.log("existe y entro m68:" + existe);
+console.log("existe y entro m68 " + existe);
   return mindmaps.Document.fromJSON(json);    
 }
 
