@@ -35,6 +35,7 @@ PRODUCTION -->
 
 
 <script>
+/*
 function onStateChange() {
   console.log("entró en onStateChange");
   var existe = gapi.hangout.data.getValue('mapaModel');
@@ -46,7 +47,7 @@ function onStateChange() {
 
   gapi.hangout.data.onStateChanged.add(onStateChange);
 
-
+*/
 </script>
 
 
