@@ -17,6 +17,40 @@
 
 var kMAPA = "mapaModel";
 
+function onStateChange() {
+	console.log("entró en onStateChange");
+	var existe = gapi.hangout.data.getValue('mapaModel');
+	if(existe){
+		console.log("existe: " + existe);
+		pintaMapa(existe);
+	}
+};
+
+gapi.hangout.data.onStateChanged.add(onStateChange);
+
+function pintaMapa(json) {
+	alert("json+++++" + json);
+}
+
+gapi.hangout.onApiReady.add(function(eventObj){
+	try {
+		if (eventObj.isApiReady) {
+		console.log("entró en isApiReady");
+		var existe = gapi.hangout.data.getValue('mapaModel');
+		if(existe){
+			console.log("existe: " + existe);
+			pintaMapa(existe);
+		}
+		}
+	}
+	catch (e) {
+	console.log(e.stack);
+}
+});
+
+
+
+
 mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
   var self = this;  
   this.document = null;
