@@ -32,8 +32,8 @@ function pintaMapa(json) {
   //return mindmaps.Document.fromJSON(json);    
   alert("JSON==101" + json);
   
-  //cargaMapa(json);
-  this.cargaMapa2(json);
+  cargaMapa(json);
+  //this.cargaMapa2(json);
   
 };
 
