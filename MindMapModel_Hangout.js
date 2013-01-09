@@ -17,6 +17,25 @@
 
 var kMAPA = "mapaModel";
 
+function onStateChange() {
+  console.log("entró en onStateChange");
+  var existe = gapi.hangout.data.getValue('mapaModel');
+  if(existe){
+    console.log("existe: " + existe);
+    pintaMapa(existe);
+  }
+};
+
+  gapi.hangout.data.onStateChanged.add(onStateChange);
+
+function pintaMapa(json) {  
+  //return mindmaps.Document.fromJSON(json);    
+  alert("JSON==101" + json);
+  
+}
+
+
+
 /*function onStateChange() {
 	console.log("entró en onStateChange");
 	var existe = gapi.hangout.data.getValue('mapaModel');
