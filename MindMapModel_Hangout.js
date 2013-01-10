@@ -161,18 +161,19 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
    */
   this.setDocument = function(doc) {
   	
-  	alert("ACDC"+doc);
+  /*	alert("ACDC"+doc);
   	if (json !=""){
   		cargaMapa2(json);
   	}
   	else{
+  	*/
     	this.document = doc;
     		if (doc) {
       			eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, doc);
     		} else {
       			eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
 		    }
-  	}
+  //	}
   };
 
   /**
