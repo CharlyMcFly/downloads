@@ -23,7 +23,8 @@ function onStateChange() {
   if(existe){
     console.log("existe: " + existe);
     //cargaMapa(existe);
-    pintaMapa(existe);
+    //pintaMapa(existe);
+    cargaMapa2(existe);
   }
 };
 
@@ -72,6 +73,16 @@ function cargaMapa(json){
       eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
     }
   };
+  function cargaMapa2(json){
+  //this.getDocument = function() {
+       //alert("document");
+   //return this.document;
+       alert("json2 " + json);
+       var realDoc = mindmaps.Document.fromJSON(json);
+       alert("realDoc " + realDoc);
+       this.document = realDoc;
+       return this.document;
+ };
 
 
 
