@@ -66,8 +66,9 @@ function cargaMapa (json){
     	alert("Entre a cargar mapa 1"+doc);
     	///eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
       eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, doc);
+      alert("Entre a cargar mapa 2"+doc);
     } else {
-    	alert("Entre a cargar mapa 2");
+    	alert("Entre a cargar mapa 3");
       eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
     }
   };
