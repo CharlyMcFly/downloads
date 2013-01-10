@@ -16,6 +16,7 @@
  */
 
 var kMAPA = "mapaModel";
+var realDoc= null;
 
 function onStateChange() {
   console.log("entró en onStateChange");
@@ -49,10 +50,10 @@ function pintaMapa(json) {
   
 };
 
-this.getDocument = function() {
+//this.getDocument = function() {
 	//alert("document");
-    return this.document;
-  };
+  //  return this.document;
+  //};
 
 function cargaMapa(json){
 //this.cargaMapa = function(){
@@ -73,16 +74,27 @@ function cargaMapa(json){
       eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
     }
   };
-  function cargaMapa2(json){
+  
+ function cargaMapa2(json){
   //this.getDocument = function() {
        //alert("document");
    //return this.document;
        alert("json2 " + json);
-       var realDoc = mindmaps.Document.fromJSON(json);
+       realDoc = mindmaps.Document.fromJSON(json);
+       
        alert("realDoc " + realDoc);
        this.document = realDoc;
-       return this.document;
-       alert("fin carga 2");
+     if (doc) {
+    	alert("Entre a cargar mapa 1"+doc);
+    	///eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
+      eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, doc);
+      alert("Entre a cargar mapa 2"+doc);
+    } else {
+    	alert("Entre a cargar mapa 3");
+      eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
+    }
+     //  return this.document;
+     ///  alert("fin carga 2");
  };
 
 
@@ -134,7 +146,11 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
    */
   this.getDocument = function() {
 	//alert("document");
-    return this.document;
+	if (realDoc!=null)
+		return realDoc;
+	else 
+		return this.document;
+    //return this.document;
   };
 
   /**
