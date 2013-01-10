@@ -10,11 +10,11 @@
       <script type="text/javascript" src="//www.google.com/jsapi"></script>
       <script type="text/javascript">google.load("jquery", "1.7.1");</script>
 
-      <!-- PRODUCCION -->
+      <!-- PRODUCCION 
       <script src="//talkgadget.google.com/hangouts/_/api/hangout.js?v=1.2"></script>
-      
-      <!-- DESARROLLO 
-      <script src="//hangoutsapi.talkgadget.google.com/hangouts/_/api/hangout.js?v=1.2"></script>-->
+      -->
+      <!-- DESARROLLO -->
+      <script src="//hangoutsapi.talkgadget.google.com/hangouts/_/api/hangout.js?v=1.2"></script>
 
 <!-- PRODUCTION
 <html manifest="cache.appcache">
