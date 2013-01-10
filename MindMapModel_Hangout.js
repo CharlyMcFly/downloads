@@ -88,7 +88,7 @@ function cargaMapa(json){
     	alert("Entre a cargar mapa 1"+realDoc);
     	///eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
       eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, realDoc);
-      alert("Entre a cargar mapa 2"+realDoc);
+      //alert("Entre a cargar mapa 2"+realDoc);
     } else {
     	alert("Entre a cargar mapa 3");
       eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
@@ -145,7 +145,7 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
    * @returns {mindmaps.Document} the current document.
    */
   this.getDocument = function() {
-	//alert("document");
+	alert("document 9000");
 	if (realDoc!=null)
 		return realDoc;
 	else 
@@ -160,12 +160,19 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
    * @param {mindmaps.Document} doc or pass null to close the document
    */
   this.setDocument = function(doc) {
-    this.document = doc;
-    if (doc) {
-      eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, doc);
-    } else {
-      eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
-    }
+  	
+  	alert("ACDC"+doc);
+  	if (json !=""){
+  		cargaMapa2(json);
+  	}
+  	else{
+    	this.document = doc;
+    		if (doc) {
+      			eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, doc);
+    		} else {
+      			eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
+		    }
+  	}
   };
 
   /**
