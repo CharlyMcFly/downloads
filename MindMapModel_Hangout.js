@@ -98,6 +98,7 @@ gapi.hangout.onApiReady.add(function(eventObj){
 		if(existe){
 			console.log("existe: " + existe);
 			pintaMapa(existe);
+			
 		}
 		}
 	}
