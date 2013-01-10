@@ -79,7 +79,7 @@ function cargaMapa(json){
   //this.getDocument = function() {
        //alert("document");
    //return this.document;
-      // alert("json2 " + json);
+       alert("json2 " + json);
        realDoc = mindmaps.Document.fromJSON(json);
        
        //alert("realDoc " + realDoc);
