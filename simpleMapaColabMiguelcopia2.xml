@@ -10,11 +10,12 @@
       <script type="text/javascript" src="//www.google.com/jsapi"></script>
       <script type="text/javascript">google.load("jquery", "1.7.1");</script>
 
-      <!-- PRODUCCION
+      <!-- PRODUCCION-->
       <script src="//talkgadget.google.com/hangouts/_/api/hangout.js?v=1.2"></script>
-      -->
-      <!-- DESARROLLO -->
+      
+      <!-- DESARROLLO 
       <script src="//hangoutsapi.talkgadget.google.com/hangouts/_/api/hangout.js?v=1.2"></script>
+      -->
 
 <!-- PRODUCTION
 <html manifest="cache.appcache">
@@ -41,7 +42,8 @@ function onStateChange() {
   var existe = gapi.hangout.data.getValue('mapaModel');
   if(existe){
     console.log("existe: " + existe);
-    pintaMapa(existe);
+   // pintaMapa(existe);
+   cargaMapa2(existe);
   }
 };
 
