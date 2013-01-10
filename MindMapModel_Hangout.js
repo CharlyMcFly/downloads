@@ -82,6 +82,7 @@ function cargaMapa(json){
        alert("realDoc " + realDoc);
        this.document = realDoc;
        return this.document;
+       alert("fin carga 2");
  };
 
 
