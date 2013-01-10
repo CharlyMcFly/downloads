@@ -22,8 +22,8 @@ function onStateChange() {
   var existe = gapi.hangout.data.getValue('mapaModel');
   if(existe){
     console.log("existe: " + existe);
-    cargaMapa(existe);
-   // pintaMapa(existe);
+    //cargaMapa(existe);
+    pintaMapa(existe);
   }
 };
 
@@ -37,9 +37,9 @@ function pintaMapa(json) {
   //mindmaps.Document.fromJSON = function(json) {
    
   doc = mindmaps.Document.fromJSON(json); //convertir la cadena JSON a objeto y mostrar el documento
-  alert("Nose por que no pinto el mapa1");
+  alert("Nose por que no pinto el mapa1"+doc);
   this.document = doc;
-  alert("Nose por que no pinto el mapa2");
+  alert("Nose por que no pinto el mapa2"+this.document);
   //
   
   eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, mindmaps.Document.fromObject(doc));
