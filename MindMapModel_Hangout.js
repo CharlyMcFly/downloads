@@ -84,11 +84,11 @@ function cargaMapa(json){
        
        alert("realDoc " + realDoc);
        this.document = realDoc;
-     if (doc) {
-    	alert("Entre a cargar mapa 1"+doc);
+     if (realDoc) {
+    	alert("Entre a cargar mapa 1"+realDoc);
     	///eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
-      eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, doc);
-      alert("Entre a cargar mapa 2"+doc);
+      eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, realDoc);
+      alert("Entre a cargar mapa 2"+realDoc);
     } else {
     	alert("Entre a cargar mapa 3");
       eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
