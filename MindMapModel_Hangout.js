@@ -256,7 +256,7 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
    * @param {mindmaps.Node} parent
    */
   this.createNode = function(node, parent) {
-	alert("agrega nodo al mapa");
+	//alert("agrega nodo al mapa");
     var map = this.getMindMap();
     if (!(node && parent)) {
       parent = this.selectedNode;
@@ -270,7 +270,7 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
 	//obtener documento y serializarlo para obtener un json
 	var doc = this.document;
 	var jsonString = doc.serialize();
-	//alert("json " + jsonString);
+	alert("json " + jsonString);
   gapi.hangout.data.setValue(kMAPA, jsonString);
   };
 
