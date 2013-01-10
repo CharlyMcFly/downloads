@@ -33,7 +33,7 @@ function onStateChange() {
 
 function pintaMapa(json) {  
   //return mindmaps.Document.fromJSON(json);    
-  alert("JSON==101" + json);
+  //alert("JSON==101" + json);
   
   //cargaMapa(json);
   //mindmaps.Document.fromJSON = function(json) {
