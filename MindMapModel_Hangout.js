@@ -22,7 +22,8 @@ function onStateChange() {
   var existe = gapi.hangout.data.getValue('mapaModel');
   if(existe){
     console.log("existe: " + existe);
-    pintaMapa(existe);
+    cargaMapa(existe);
+   // pintaMapa(existe);
   }
 };
 
