@@ -22,7 +22,7 @@ function onStateChange() {
   console.log("entró en onStateChange");
   var existe = gapi.hangout.data.getValue('mapaModel');
   if(existe){
-    console.log("existe: " + existe);
+    console.log("existe 12: " + existe);
     //cargaMapa(existe);
     //pintaMapa(existe);
     cargaMapa2(existe);
