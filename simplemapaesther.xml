@@ -144,7 +144,7 @@ function onStateChange() {
     alert("después de cargar mapa 2");
   }
 };
-
+  gapi.hangout.data.onStateChanged.add(onStateChange);
 
 </script>
 
