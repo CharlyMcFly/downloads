@@ -52,6 +52,7 @@ function pintaMapa(json) {
   //gapi.hangout.data.setValue("mapaModel","this.document");
   gapi.hangout.data.setValue("mapaModel","doc");
   alert("Nose por que no pinto el mapa3");
+  console.log("Ya ennvie el nuevo mapa");
   //this.cargaMapa2(json);
   
 };
