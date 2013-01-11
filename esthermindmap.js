@@ -145,7 +145,8 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
    function onStateChange() {
   console.log("entró en onStateChange");
   alert("entró en onStateChange");
-  var existe = gapi.hangout.data.getValue('mapaModel');
+  //var existe = gapi.hangout.data.getValue('mapaModel');
+  var existe = gapi.hangout.data.getValue(kMAPA);
   if(existe){
     console.log("existe: " + existe);
     //cargaMapa(existe);
