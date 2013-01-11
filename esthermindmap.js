@@ -15,7 +15,7 @@
  * @param {mindmaps.CommandRegistry} commandRegistry
  */
 
-/*
+
 var kMAPA = "mapaModel";
 var realDoc= null;
 
@@ -32,7 +32,7 @@ function onStateChange() {
 
   gapi.hangout.data.onStateChanged.add(onStateChange);
 
-function pintaMapa(json) {  
+/*function pintaMapa(json) {  
   //return mindmaps.Document.fromJSON(json);    
   //alert("JSON==101" + json);
   
@@ -142,7 +142,7 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
   this.selectedNode = null;
    var kMAPA = "mapaModel";
    
-   function onStateChange() {
+   /*function onStateChange() {
   console.log("entró en onStateChange");
   alert("entró en onStateChange");
   //var existe = gapi.hangout.data.getValue('mapaModel');
@@ -155,7 +155,7 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
   }
 };
 
-  gapi.hangout.data.onStateChanged.add(onStateChange);
+  gapi.hangout.data.onStateChanged.add(onStateChange);*/
   /**
    * Gets the current document.
    * 
