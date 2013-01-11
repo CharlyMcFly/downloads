@@ -18,6 +18,8 @@
 var kMAPA = "mapaModel";
 var realDoc= null;
 
+gapi.hangout.data.onStateChanged.add(onStateChange);
+
 function onStateChange() {
   console.log("entró en onStateChange");
   var existe = gapi.hangout.data.getValue('mapaModel');
@@ -29,7 +31,7 @@ function onStateChange() {
   }
 };
 
-  gapi.hangout.data.onStateChanged.add(onStateChange);
+  
 
 function pintaMapa(json) {  
   //return mindmaps.Document.fromJSON(json);    
@@ -89,7 +91,7 @@ function cargaMapa(json){
     	///eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
       eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, realDoc);
       alert("Pase por aqui");
-      gapi.hangout.data.setValue("realDoc");
+      //gapi.hangout.data.setValue("realDoc");
       alert("Pase por aca");
       //alert("Entre a cargar mapa 2"+realDoc);
     } else {
