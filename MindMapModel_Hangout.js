@@ -28,8 +28,8 @@ function onStateChange() {
   if(existe){
     console.log("existe 12: " + existe);
     //cargaMapa(existe);
-    //pintaMapa(existe);
-    cargaMapa2(existe);
+    pintaMapa(existe);
+    //cargaMapa2(existe);
   }
 };
 
