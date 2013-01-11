@@ -150,7 +150,7 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
 		return realDoc;
 	else 
 		return this.document;*/
-    //return this.document;
+    return this.document;
   };
 
   /**
