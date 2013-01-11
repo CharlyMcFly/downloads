@@ -108,7 +108,7 @@ function onStateChange() {
 
 /*
 function pintaMapa(json) {  
-  //return mindmaps.Document.fromJSON(json);    
+  return mindmaps.Document.fromJSON(json);    
   alert("JSON====" + json);
 }
 */
@@ -117,7 +117,7 @@ gapi.hangout.onApiReady.add(function(eventObj)
 {     
   try {       
       if (eventObj.isApiReady) { 
-        console.log("entró en isApiReady=================");
+        console.log("entró en isApiReady==============m68");
         var existe = gapi.hangout.data.getValue('mapaModel');
         if(existe){
           console.log("existe: " + existe);
