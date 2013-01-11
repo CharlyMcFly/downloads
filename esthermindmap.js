@@ -85,7 +85,7 @@ function cargaMapa(json){
        //alert("realDoc " + realDoc);
        this.document = realDoc;
      if (realDoc) {
-    	//alert("Entre a cargar mapa 1"+realDoc);
+    	alert("Entre a cargar mapa 1" + realDoc);
     	///eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
       eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, realDoc);
       //alert("Entre a cargar mapa 2"+realDoc);
@@ -145,7 +145,7 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
    * @returns {mindmaps.Document} the current document.
    */
   this.getDocument = function() {
-	alert("getDocument" + this.document);
+	alert("getDocument " + this.document);
 	/*if (realDoc!=null)
 		return realDoc;
 	else 
