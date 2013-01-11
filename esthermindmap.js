@@ -134,7 +134,7 @@ gapi.hangout.onApiReady.add(function(eventObj){
 });*/
 
 
-
+gapi.hangout.data.onStateChanged.add(onStateChange);
 
 mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
   var self = this;  
