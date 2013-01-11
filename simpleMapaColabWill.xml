@@ -50,6 +50,23 @@ function onStateChange() {
 
 </script>
 
+  <!-- 
+   gapi.hangout.data.onStateChanged.add(function(stateChangeEvent) {
+setTimeout(actualizaEstado,2000); //Aquí se manda a llamar la función que tiene todo el código para actualizar el estado y mandar a pintar
+
+});
+
+function actualizaEstado(){
+
+var estado = gapi.hangout.data.getState(); //No recuerdo si con eso recuperaban el JSON, pero pónganlo como lo tienen ustedes en la función de los alerts
+
+gapi.hangout.data.setValue("mapa",estado);
+
+}
+  
+  
+  
+  -->
 
 
   <!-- JS:LIB:BEGIN -->
