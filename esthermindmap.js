@@ -20,7 +20,7 @@ var kMAPA = "mapaModel";
 var realDoc= null;
 
 function onStateChange() {
-alert("entró on state");
+  alert("entró on state");
   console.log("entró en onStateChange");
   var existe = gapi.hangout.data.getValue('mapaModel');
   if(existe){
@@ -28,7 +28,9 @@ alert("entró on state");
     //cargaMapa(existe);
     //pintaMapa(existe);
     //cargaMapa2(existe);
+    alert("entró a existe");
     mindmapModel.cargaMapa2(existe);
+    alert("después de cargar mapa 2");
   }
 };
 
