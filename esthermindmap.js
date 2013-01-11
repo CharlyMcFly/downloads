@@ -134,7 +134,7 @@ gapi.hangout.onApiReady.add(function(eventObj){
 });*/
 
 
-gapi.hangout.data.onStateChanged.add(onStateChange);
+//gapi.hangout.data.onStateChanged.add(onStateChange);
 
 mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
   var self = this;  
@@ -155,7 +155,7 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
   }
 };
 
-  //gapi.hangout.data.onStateChanged.add(onStateChange);
+  gapi.hangout.data.onStateChanged.add(onStateChange);
   /**
    * Gets the current document.
    * 
