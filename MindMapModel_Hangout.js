@@ -41,7 +41,7 @@ function pintaMapa(json) {
   //mindmaps.Document.fromJSON = function(json) {
    
   doc = mindmaps.Document.fromJSON(json); //convertir la cadena JSON a objeto y mostrar el documento
-  //alert("Nose por que no pinto el mapa1"+doc);
+  alert("Nose por que no pinto el mapa1"+doc);
   this.document = doc;
   //alert("Nose por que no pinto el mapa2"+this.document);
   //
