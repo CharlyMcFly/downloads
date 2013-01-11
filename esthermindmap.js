@@ -155,7 +155,7 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
   }
 };
 
-  gapi.hangout.data.onStateChanged.add(onStateChange);
+  //gapi.hangout.data.onStateChanged.add(onStateChange);
   /**
    * Gets the current document.
    * 
