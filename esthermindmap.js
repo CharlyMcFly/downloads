@@ -75,6 +75,27 @@ function cargaMapa(json){
     }
   };
   
+  this.cargaMapa2 = function(json){
+  //this.getDocument = function() {
+       //alert("document");
+   //return this.document;
+       alert("cargaMapa2 " + json);
+       realDoc = mindmaps.Document.fromJSON(json);
+       
+       //alert("realDoc " + realDoc);
+       this.document = realDoc;
+     if (realDoc) {
+     alert("Entre a cargar mapa 1" + realDoc);
+     ///eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
+      eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, realDoc);
+      //alert("Entre a cargar mapa 2"+realDoc);
+    } else {
+     //alert("Entre a cargar mapa 3");
+      eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
+    }
+     // return this.document;
+     /// alert("fin carga 2");
+ };
  
 
 
