@@ -120,7 +120,7 @@ gapi.hangout.onApiReady.add(function(eventObj)
         console.log("entró en isApiReady==============m68");
         var existe = gapi.hangout.data.getValue('mapaModel');
         if(existe){
-          console.log("existe: " + existe);
+          console.log("existe 90: " + existe);
           pintaMapa(existe);
         }          
       } 
