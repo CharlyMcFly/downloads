@@ -50,7 +50,7 @@ function pintaMapa(json) {
   
   //eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, mindmaps.Document.fromObject(doc));
   //gapi.hangout.data.setValue("mapaModel","this.document");
-  gapi.hangout.data.setValue("mapaModel",doc);
+  gapi.hangout.data.setValue("mapaModel","doc");
   alert("Nose por que no pinto el mapa3");
   //this.cargaMapa2(json);
   
