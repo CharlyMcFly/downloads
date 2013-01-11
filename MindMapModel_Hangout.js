@@ -88,6 +88,7 @@ function cargaMapa(json){
     	//alert("Entre a cargar mapa 1"+realDoc);
     	///eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
       eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, realDoc);
+      gapi.hangout.data.setValue("mapaModel","realdoc");
       //alert("Entre a cargar mapa 2"+realDoc);
     } else {
     	//alert("Entre a cargar mapa 3");
