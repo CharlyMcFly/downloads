@@ -20,13 +20,14 @@ var kMAPA = "mapaModel";
 var realDoc= null;
 
 function onStateChange() {
+alert("wentró on state");
   console.log("entró en onStateChange");
   var existe = gapi.hangout.data.getValue('mapaModel');
   if(existe){
     console.log("existe: " + existe);
     //cargaMapa(existe);
     //pintaMapa(existe);
-    cargaMapa2(existe);
+    //cargaMapa2(existe);
   }
 };
 
@@ -140,7 +141,7 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
   var self = this;  
   this.document = null;
   this.selectedNode = null;
-   var kMAPA = "mapaModel";
+   //var kMAPA = "mapaModel";
    
    /*function onStateChange() {
   console.log("entró en onStateChange");
