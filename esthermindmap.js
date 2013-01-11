@@ -79,7 +79,7 @@ function cargaMapa(json){
   //this.getDocument = function() {
        //alert("document");
    //return this.document;
-       alert("json2 " + json);
+       alert("cargaMapa2 " + json);
        realDoc = mindmaps.Document.fromJSON(json);
        
        //alert("realDoc " + realDoc);
@@ -145,11 +145,11 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
    * @returns {mindmaps.Document} the current document.
    */
   this.getDocument = function() {
-	//alert("document 9000");
-	if (realDoc!=null)
+	alert("getDocument" + this.document);
+	/*if (realDoc!=null)
 		return realDoc;
 	else 
-		return this.document;
+		return this.document;*/
     //return this.document;
   };
 
@@ -167,6 +167,7 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
   	}
   	else{
   	*/
+  	alert("setDocument " + doc);
     	this.document = doc;
     		if (doc) {
       			eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, doc);
@@ -270,7 +271,7 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
 	//obtener documento y serializarlo para obtener un json
 	var doc = this.document;
 	var jsonString = doc.serialize();
-	alert("json " + jsonString);
+	alert("creaNodo " + jsonString);
   gapi.hangout.data.setValue(kMAPA, jsonString);
   };
 
