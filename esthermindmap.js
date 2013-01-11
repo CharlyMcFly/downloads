@@ -192,7 +192,8 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
   //	}
   };
   
-  this.cargaMapa2 = function(json){
+  //this.cargaMapa2 = function(json){
+  function cargaMapa2(json){
   //this.getDocument = function() {
        //alert("document");
    //return this.document;
