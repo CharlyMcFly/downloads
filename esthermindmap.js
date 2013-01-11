@@ -75,7 +75,7 @@ function cargaMapa(json){
     }
   };
   
-  this.cargaMapa2 = function(json){
+  function cargaMapa2(json){
   //this.getDocument = function() {
        //alert("document");
    //return this.document;
@@ -198,7 +198,7 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
     }
      //  return this.document;
      ///  alert("fin carga 2");
- };*/d
+ };*/
  
 
   /**
