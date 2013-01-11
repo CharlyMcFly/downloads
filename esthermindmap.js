@@ -75,7 +75,7 @@ function cargaMapa(json){
     }
   };
   
-  function cargaMapa2(json){
+  /*function cargaMapa2(json){
   //this.getDocument = function() {
        //alert("document");
    //return this.document;
@@ -95,7 +95,7 @@ function cargaMapa(json){
     }
      // return this.document;
      /// alert("fin carga 2");
- };
+ };*/
  
 
 
@@ -178,7 +178,7 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
   //	}
   };
   
-  /*this.cargaMapa2 = function(json){
+  this.cargaMapa2 = function(json){
   //this.getDocument = function() {
        //alert("document");
    //return this.document;
@@ -191,14 +191,14 @@ mindmaps.MindMapModel = function(eventBus, commandRegistry, undoController) {
     	alert("Entre a cargar mapa 1" + realDoc);
     	///eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
       eventBus.publish(mindmaps.Event.DOCUMENT_OPENED, realDoc);
-      //alert("Entre a cargar mapa 2"+realDoc);
+      alert("Entre a cargar mapa 2"+realDoc);
     } else {
     	//alert("Entre a cargar mapa 3");
       eventBus.publish(mindmaps.Event.DOCUMENT_CLOSED);
     }
      //  return this.document;
      ///  alert("fin carga 2");
- };*/
+ };
  
 
   /**
