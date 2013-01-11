@@ -28,6 +28,7 @@ alert("wentró on state");
     //cargaMapa(existe);
     //pintaMapa(existe);
     //cargaMapa2(existe);
+    mindmapModel.cargaMapa2(existe);
   }
 };
 
